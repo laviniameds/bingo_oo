@@ -1,0 +1,4 @@
+C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\bin\Debug\DAO.dll
+C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\bin\Debug\DAO.pdb
+C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\obj\Debug\DAO.dll
+C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\obj\Debug\DAO.pdb
