@@ -14,3 +14,13 @@ C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\Bingo_OO\bin\Deb
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.exe.config
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.exe
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.pdb
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.csprojResolveAssemblyReference.cache
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Bingo.resources
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Cartela.resources
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Properties.Resources.resources
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Sorteio.resources
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.csproj.GenerateResource.Cache
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.exe
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\DAO.dll
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\DAO.pdb
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.pdb

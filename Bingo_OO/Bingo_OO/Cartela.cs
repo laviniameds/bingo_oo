@@ -17,31 +17,20 @@ namespace Bingo_OO
         {
             InitializeComponent();
             classCartela c = new classCartela();
+            Button[,] botoes = new Button[5,5];
             int[] array = c.encherCartela();
-            b1.Text = array[0].ToString();
-            b2.Text = array[1].ToString();
-            b3.Text = array[2].ToString();
-            b4.Text = array[3].ToString();
-            b5.Text = array[4].ToString();
-            b6.Text = array[5].ToString();
-            b7.Text = array[6].ToString();
-            b8.Text = array[7].ToString();
-            b9.Text = array[8].ToString();
-            b10.Text = array[9].ToString();
-            b11.Text = array[10].ToString();
-            b12.Text = array[11].ToString();
-            b13.Text = array[12].ToString();
-            b14.Text = array[13].ToString();
-            b15.Text = array[14].ToString();
-            b16.Text = array[15].ToString();
-            b17.Text = array[16].ToString();
-            b18.Text = array[17].ToString();
-            b19.Text = array[18].ToString();
-            b20.Text = array[19].ToString();
-            b21.Text = array[20].ToString();
-            b22.Text = array[21].ToString();
-            b23.Text = array[22].ToString();
-            b24.Text = array[23].ToString();
+            for (int i = 0; i < 5; i++)
+                for (int j = 0; j < 5; j++)
+                {
+                    if (!(i == 2 && j == 2))
+                    {
+                        botoes[i, j] = new Button();
+                        botoes[i, j].Text = array[i].ToString();
+                        botoes[i, j].Size = new Size(62, 56);
+                        botoes[i, j].Location = new Point(61 * i, 52 * j);
+                        panel1.Controls.Add(botoes[i,j]);
+                    }
+                }
         }
     }
 }
