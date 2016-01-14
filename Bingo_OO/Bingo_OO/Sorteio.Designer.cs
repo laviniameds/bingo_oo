@@ -30,6 +30,8 @@
         {
             this.btnSortear = new System.Windows.Forms.Button();
             this.lblSorteado = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPanelSort = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSortear
@@ -52,14 +54,35 @@
             this.lblSorteado.TabIndex = 2;
             this.lblSorteado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 190);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Sorteados:";
+            // 
+            // lblPanelSort
+            // 
+            this.lblPanelSort.AutoSize = true;
+            this.lblPanelSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPanelSort.Location = new System.Drawing.Point(13, 212);
+            this.lblPanelSort.MaximumSize = new System.Drawing.Size(250, 500);
+            this.lblPanelSort.Name = "lblPanelSort";
+            this.lblPanelSort.Size = new System.Drawing.Size(0, 25);
+            this.lblPanelSort.TabIndex = 4;
+            // 
             // Sorteio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 195);
+            this.ClientSize = new System.Drawing.Size(280, 475);
+            this.Controls.Add(this.lblPanelSort);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSorteado);
             this.Controls.Add(this.btnSortear);
-            this.MaximumSize = new System.Drawing.Size(296, 233);
+            this.MaximumSize = new System.Drawing.Size(296, 513);
             this.Name = "Sorteio";
             this.Text = "Sorteio";
             this.ResumeLayout(false);
@@ -71,5 +94,7 @@
 
         private System.Windows.Forms.Button btnSortear;
         private System.Windows.Forms.Label lblSorteado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPanelSort;
     }
 }

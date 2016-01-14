@@ -23,5 +23,14 @@ namespace DAO
             for (int i = 0; i < r.Length; i++) r[i] = arrayTemp[i];
             return r;
         }
+
+        static int[] _armSorteio = new int[75];
+
+        public int[] armSorteio
+        {
+            set { _armSorteio = value; }
+            get { return _armSorteio; }
+        }      
+
     }
 }

@@ -12,8 +12,10 @@ namespace Bingo_OO
 {
     public partial class Sorteio : Form
     {
+        classCartela c = new classCartela();
         int[] sorteados = new int[75];
         int cont = 0;
+
         public Sorteio()
         {
             InitializeComponent();
@@ -27,6 +29,8 @@ namespace Bingo_OO
             if (cont < 75)
             {
                 lblSorteado.Text = sorteados[cont].ToString();
+                lblPanelSort.Text = lblPanelSort.Text + " " + sorteados[cont].ToString();
+                c.armSorteio.SetValue(sorteados[cont], cont);
                 cont++;
             }
             else

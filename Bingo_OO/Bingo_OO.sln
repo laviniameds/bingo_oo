@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bingo_OO", "Bingo_OO\Bingo_OO.csproj", "{01F95FD2-4565-42AD-AEF8-6022CD91052A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{8BD2AF19-5378-45D4-B7F0-204456B53F23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{17D619A6-9A06-4C05-8965-E66A36BBC852}"
 EndProject
@@ -27,16 +27,6 @@ Global
 		{01F95FD2-4565-42AD-AEF8-6022CD91052A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{01F95FD2-4565-42AD-AEF8-6022CD91052A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{01F95FD2-4565-42AD-AEF8-6022CD91052A}.Release|x86.ActiveCfg = Release|Any CPU
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Debug|x86.ActiveCfg = Debug|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Debug|x86.Build.0 = Debug|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Release|Any CPU.ActiveCfg = Release|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Release|Mixed Platforms.Build.0 = Release|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Release|x86.ActiveCfg = Release|x86
-		{8BD2AF19-5378-45D4-B7F0-204456B53F23}.Release|x86.Build.0 = Release|x86
 		{17D619A6-9A06-4C05-8965-E66A36BBC852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17D619A6-9A06-4C05-8965-E66A36BBC852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D619A6-9A06-4C05-8965-E66A36BBC852}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

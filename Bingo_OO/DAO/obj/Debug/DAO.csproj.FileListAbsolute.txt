@@ -2,3 +2,8 @@ C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\bin\Debug\DA
 C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\bin\Debug\DAO.pdb
 C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\obj\Debug\DAO.dll
 C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\DAO\obj\Debug\DAO.pdb
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\DAO\bin\Debug\DAO.dll
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\DAO\bin\Debug\DAO.pdb
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\DAO\obj\Debug\DAO.dll
+C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\DAO\obj\Debug\DAO.pdb
