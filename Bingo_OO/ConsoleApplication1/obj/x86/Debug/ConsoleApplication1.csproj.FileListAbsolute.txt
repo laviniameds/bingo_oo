@@ -1,6 +1,0 @@
-C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
-C:\Users\Lavinia\Documents\Visual Studio 2015\Projects\Bingo_OO\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
-C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
-C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
