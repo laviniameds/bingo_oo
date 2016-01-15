@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAO;
 
 namespace Bingo_OO
 {
@@ -14,6 +15,7 @@ namespace Bingo_OO
     {
         int cont = 0;
         Cartela[] c = new Cartela[Int16.MaxValue];
+        classCartela cCart = new classCartela();
         Sorteio s;
         public Bingo()
         {
@@ -49,6 +51,7 @@ namespace Bingo_OO
                 novaCartela.Enabled = false;
                 novoJogoMenu.Enabled = true;
                 cont = 0;
+                for (int i = 0; i < 75; i++) cCart.armSorteio.SetValue(0, i);
             }
         }
     }

@@ -24,13 +24,12 @@ namespace DAO
             return r;
         }
 
-        static int[] _armSorteio = new int[75];
+        private static int[] _armSorteio = new int[75];
 
         public int[] armSorteio
         {
-            set { _armSorteio = value; }
             get { return _armSorteio; }
-        }      
-
+            set { _armSorteio = value; }
+        }
     }
 }
