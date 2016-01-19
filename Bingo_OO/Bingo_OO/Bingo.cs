@@ -17,6 +17,9 @@ namespace Bingo_OO
         Cartela[] c = new Cartela[Int16.MaxValue];
         classCartela cCart = new classCartela();
         Sorteio s;
+
+        public Sorteio sort;
+
         public Bingo()
         {
             InitializeComponent();
@@ -28,16 +31,27 @@ namespace Bingo_OO
         {
             novaCartela.Enabled = true;
             terminarJogo.Enabled = true;
-            s = new Sorteio();
-            s.Show();
+            InicSorteio();
             novoJogoMenu.Enabled = false;
+            InicCartela();
         }
 
-        private void novaCartela_Click(object sender, EventArgs e)
+        public void InicCartela()
         {
             c[cont] = new Cartela();
             c[cont].Show();
             c[cont].Text = "Cartela " + ++cont;
+        }
+
+        public void InicSorteio()
+        {
+            s = new Sorteio();
+            s.Show();
+        }
+
+        private void novaCartela_Click(object sender, EventArgs e)
+        {
+            InicCartela();
         }
 
         private void terminarJogo_Click(object sender, EventArgs e)

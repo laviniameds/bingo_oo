@@ -14,7 +14,7 @@ namespace Bingo_OO
     {
         classCartela c = new classCartela();
         int[] sorteados = new int[75];
-        int cont = 0;
+        public int cont = 0;
 
         public Sorteio()
         {
