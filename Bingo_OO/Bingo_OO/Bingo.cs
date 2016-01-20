@@ -13,12 +13,10 @@ namespace Bingo_OO
 {
     public partial class Bingo : Form
     {
-        int cont = 0;
         Cartela[] c = new Cartela[Int16.MaxValue];
         classCartela cCart = new classCartela();
         Sorteio s;
-
-        public Sorteio sort;
+        int cont = 0;
 
         public Bingo()
         {
@@ -33,6 +31,7 @@ namespace Bingo_OO
             terminarJogo.Enabled = true;
             InicSorteio();
             novoJogoMenu.Enabled = false;
+            cont = 0;
             InicCartela();
         }
 
@@ -64,7 +63,6 @@ namespace Bingo_OO
                 terminarJogo.Enabled = false;
                 novaCartela.Enabled = false;
                 novoJogoMenu.Enabled = true;
-                cont = 0;
                 for (int i = 0; i < 75; i++) cCart.armSorteio.SetValue(0, i);
             }
         }
