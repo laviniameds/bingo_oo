@@ -77,6 +77,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(443, 318);
+            this.MinimumSize = new System.Drawing.Size(443, 318);
             this.Name = "Bingo";
             this.Text = "Bingo";
             this.menuStrip1.ResumeLayout(false);

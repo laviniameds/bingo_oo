@@ -21,8 +21,6 @@ C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Prop
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.Sorteio.resources
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.csproj.GenerateResource.Cache
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.exe
-C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\DAO.dll
-C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\DAO.pdb
 C:\Users\Lavinia\Source\Repos\bingo_oo\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.pdb
 C:\Users\Helena\Downloads\bingo_oo-master\bingo_oo-master\Bingo_OO\Bingo_OO\bin\Debug\Bingo_OO.exe.config
 C:\Users\Helena\Downloads\bingo_oo-master\bingo_oo-master\Bingo_OO\Bingo_OO\obj\Debug\Bingo_OO.exe

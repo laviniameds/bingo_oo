@@ -76,6 +76,9 @@
     <Compile Include="Cartela.Designer.cs">
       <DependentUpon>Cartela.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\classBingo.cs" />
+    <Compile Include="Classes\classCartela.cs" />
+    <Compile Include="Classes\classSorteio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sorteio.cs">
@@ -124,12 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{17D619A6-9A06-4C05-8965-E66A36BBC852}</Project>
-      <Name>DAO</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
