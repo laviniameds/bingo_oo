@@ -12,6 +12,7 @@ namespace Bingo_OO
 {
     public partial class Sorteio : Form
     {
+        classSorteio s = new classSorteio();
         public Sorteio()
         {
             InitializeComponent();
@@ -20,8 +21,7 @@ namespace Bingo_OO
 
         private void btnSortear_Click(object sender, EventArgs e)
         {
-            classSorteio s = new classSorteio();
-            lblSorteado.Text = s.Sorteado;
+            lblSorteado.Text = s.clicarSortear();
             listBox1.Items.Add(lblSorteado.Text);
             if (lblSorteado.Text == "--") btnSortear.Enabled = false;
         }

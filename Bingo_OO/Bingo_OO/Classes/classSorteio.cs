@@ -8,54 +8,57 @@ namespace Bingo_OO.Classes
 {
     public class classSorteio
     {
-        private int[] arraySorteados;
+        private int[] arraySorteados = new int[75];
 
         private int[] sortear()
         {
-            arraySorteados = new int[75];
-            for (int i = 1; i <= 75; i++) arraySorteados[i - 1] = i;
+            for (int i = 1; i <= 75; i++) ArraySorteados[i - 1] = i;
             Random ran = new Random();
-            for (int i = 0; i < arraySorteados.Length; i++)
+            for (int i = 0; i < ArraySorteados.Length; i++)
             {
                 int pos = ran.Next(1, 75);
-                int temp = arraySorteados[i];
-                arraySorteados[i] = arraySorteados[pos];
-                arraySorteados[pos] = temp;
+                int temp = ArraySorteados[i];
+                ArraySorteados[i] = ArraySorteados[pos];
+                ArraySorteados[pos] = temp;
             }
-            return arraySorteados;
+            return ArraySorteados;
         }
 
         private string sorteado; 
 
-        private string clicarSortear()
+        public string clicarSortear()
         {
-            classCartela cart = new classCartela();
-            string temp;
-            if (cont > 75)
+            cont++;
+            if (cont < 75)
             {
-                temp = ArraySorteados.GetValue(cont).ToString();
+                sorteado = ArraySorteados.GetValue(cont).ToString();
                 //cart.ArmSorteio.SetValue(Convert.ToInt32(temp), cont);
-                cont++;
-                return temp;
+                return sorteado;
             }
             else
             {
-                return temp = "--";
+                return sorteado = "--";
             }
         }
 
         public int[] ArraySorteados
         {
             get { return arraySorteados; }
-            set { arraySorteados = sortear(); }
+            set { arraySorteados = value; }
         }
 
-        public int cont = 0;
+        public int cont = -1;
 
         public string Sorteado
         {
             get {return sorteado;}
-            set {sorteado = clicarSortear();}
+            set { sorteado = clicarSortear(); }
+        }
+
+        public classSorteio()
+        {
+            sortear();
+            clicarSortear();
         }
     }
 }

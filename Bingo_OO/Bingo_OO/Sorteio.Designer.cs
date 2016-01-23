@@ -67,7 +67,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(16, 218);
-            this.listBox1.MultiColumn = true;
+            this.listBox1.Margin = new System.Windows.Forms.Padding(0);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.listBox1.Size = new System.Drawing.Size(252, 225);
