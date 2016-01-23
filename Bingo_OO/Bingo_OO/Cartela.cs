@@ -16,7 +16,8 @@ namespace Bingo_OO
         public Cartela()
         {
             InitializeComponent();
-            classCartela c = new classCartela(this);
+            classCartela c = new classCartela();
+            this.Controls.Add(c.Painel);
             if(c.Ganhou)MessageBox.Show("Parabéns " + ActiveForm.Text + "! Você ganhou o jogo :D");
         }
     }

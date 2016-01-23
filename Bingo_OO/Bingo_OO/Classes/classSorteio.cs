@@ -8,19 +8,54 @@ namespace Bingo_OO.Classes
 {
     public class classSorteio
     {
-        public int[] sortear()
+        private int[] arraySorteados;
+
+        private int[] sortear()
         {
-            int[] sorteados = new int[75];
-            for (int i = 1; i <= 75; i++) sorteados[i - 1] = i;
+            arraySorteados = new int[75];
+            for (int i = 1; i <= 75; i++) arraySorteados[i - 1] = i;
             Random ran = new Random();
-            for (int i = 0; i < sorteados.Length; i++)
+            for (int i = 0; i < arraySorteados.Length; i++)
             {
                 int pos = ran.Next(1, 75);
-                int temp = sorteados[i];
-                sorteados[i] = sorteados[pos];
-                sorteados[pos] = temp;
+                int temp = arraySorteados[i];
+                arraySorteados[i] = arraySorteados[pos];
+                arraySorteados[pos] = temp;
             }
-            return sorteados;
-        }      
+            return arraySorteados;
+        }
+
+        public int cont = 0;
+
+        private string sorteado; 
+
+        private string clicarSortear()
+        {
+            classCartela cart = new classCartela();
+            string temp;
+            if (cont > 75)
+            {
+                temp = ArraySorteados.GetValue(cont).ToString();
+                //cart.ArmSorteio.SetValue(Convert.ToInt32(temp), cont);
+                cont++;
+                return temp;
+            }
+            else
+            {
+                return temp = "--";
+            }
+        }
+
+        public int[] ArraySorteados
+        {
+            get { return arraySorteados; }
+            set { arraySorteados = sortear(); }
+        }
+
+        public string Sorteado
+        {
+            get {return sorteado;}
+            set {sorteado = clicarSortear();}
+        }
     }
 }

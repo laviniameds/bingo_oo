@@ -12,6 +12,8 @@ namespace Bingo_OO.Classes
 {
     public class classCartela
     {
+        private Panel painel;
+
         private Panel encherPainel()
         {
             int[] r = new int[24];
@@ -27,11 +29,7 @@ namespace Bingo_OO.Classes
             }
             for (int i = 0; i < r.Length; i++) r[i] = arrayTemp[i];
 
-            Panel p = new Panel();
-            p.Width = 314;
-            p.Height = 289;
-            p.Location = new Point(14, 70);
-            p.BackColor = Color.White;
+            painel = new Panel();
             Button[,] botoes = new Button[5, 5];
             int cont = 0;
             for (int i = 0; i < 5; i++)
@@ -42,26 +40,27 @@ namespace Bingo_OO.Classes
                         botoes[i, j] = new Button();
                         botoes[i, j].Text = r[cont].ToString();
                         botoes[i, j].Size = new Size(62, 56);
-                        botoes[i, j].Location = new Point(61 * i, 52 * j);
+                        botoes[i, j].Location = new Point(70 * i, 70 * j);
                         botoes[i, j].Click += new EventHandler(this.botoes_Click);
-                        p.Controls.Add(botoes[i, j]);
+                        painel.Controls.Add(botoes[i, j]);
                         cont++;
                     }
                 }
-            return p;
+            return painel;
         }
 
         private int contGanhou = 0;
 
         private bool ganhou = false;
 
-        private static int[] armSorteio = new int[75];
+        //private static int[] armSorteio = new int[75];
 
         private void botoes_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            for (int i = 0; i < ArmSorteio.Length; i++)
-                if (btn.Text == ArmSorteio.GetValue(i).ToString())
+            classSorteio s = new classSorteio();
+            for (int i = 0; i < s.cont; i++)
+                if (btn.Text == s.ArraySorteados.GetValue(i).ToString())
                 {
                     btn.Enabled = false;
                     contGanhou++;
@@ -77,7 +76,7 @@ namespace Bingo_OO.Classes
                         f.MainMenuStrip.Items[0].Enabled = true;
                         f.MainMenuStrip.Items[1].Enabled = false;
                         f.MainMenuStrip.Items[2].Enabled = false;
-                        for (int i = 0; i < 75; i++) ArmSorteio.SetValue(0, i);
+                        //for (int i = 0; i < 75; i++) ArmSorteio.SetValue(0, i);
                     }
                     else f.Close();
                 }
@@ -90,15 +89,16 @@ namespace Bingo_OO.Classes
             set { ganhou = value; }
         }
 
-        public int[] ArmSorteio
+        /*public int[] ArmSorteio
         {
             get {return armSorteio;}
             set {armSorteio = value;}
-        }
+        }*/
 
-        public classCartela(Cartela c)
+        public Panel Painel
         {
-            c.Controls.Add(encherPainel());
+            get {return painel;}
+            set {painel = encherPainel();}
         }
     }
 }

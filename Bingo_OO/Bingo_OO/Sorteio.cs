@@ -12,32 +12,18 @@ namespace Bingo_OO
 {
     public partial class Sorteio : Form
     {
-        classCartela c = new classCartela();
-        int[] sorteados = new int[75];
-        public int cont = 0;
-
         public Sorteio()
         {
             InitializeComponent();
-            this.ControlBox = false;
-            classSorteio s = new classSorteio();
-            sorteados = s.sortear();
+            this.ControlBox = false;       
         }
 
         private void btnSortear_Click(object sender, EventArgs e)
         {
-            if (cont < 75)
-            {
-                lblSorteado.Text = sorteados[cont].ToString();
-                lblPanelSort.Text = lblPanelSort.Text + " " + sorteados[cont].ToString();
-                c.armSorteio.SetValue(sorteados[cont], cont);
-                cont++;
-            }
-            else
-            {
-                lblSorteado.Text = "--";
-                btnSortear.Enabled = false;
-            }
+            classSorteio s = new classSorteio();
+            lblSorteado.Text = s.Sorteado;
+            listBox1.Items.Add(lblSorteado.Text);
+            if (lblSorteado.Text == "--") btnSortear.Enabled = false;
         }
     }
 }

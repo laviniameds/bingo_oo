@@ -31,7 +31,7 @@
             this.btnSortear = new System.Windows.Forms.Button();
             this.lblSorteado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblPanelSort = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnSortear
@@ -63,22 +63,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Sorteados:";
             // 
-            // lblPanelSort
+            // listBox1
             // 
-            this.lblPanelSort.AutoSize = true;
-            this.lblPanelSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanelSort.Location = new System.Drawing.Point(13, 212);
-            this.lblPanelSort.MaximumSize = new System.Drawing.Size(250, 500);
-            this.lblPanelSort.Name = "lblPanelSort";
-            this.lblPanelSort.Size = new System.Drawing.Size(0, 25);
-            this.lblPanelSort.TabIndex = 4;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(16, 218);
+            this.listBox1.MultiColumn = true;
+            this.listBox1.Name = "listBox1";
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.listBox1.Size = new System.Drawing.Size(252, 225);
+            this.listBox1.TabIndex = 4;
             // 
             // Sorteio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 475);
-            this.Controls.Add(this.lblPanelSort);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSorteado);
             this.Controls.Add(this.btnSortear);
@@ -95,6 +95,6 @@
         private System.Windows.Forms.Button btnSortear;
         private System.Windows.Forms.Label lblSorteado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblPanelSort;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
