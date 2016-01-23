@@ -12,9 +12,11 @@ namespace Bingo_OO.Classes
         public int cont = 0;
         public void chamarNovaCartela()
         {
-            Cartela c = new Cartela();
-            c.Text = "Cartela" + ++cont;
-            c.Show();
+            Cartela cart = new Cartela();
+            classCartela c = new classCartela();
+            cart.Text = "Cartela " + ++cont;
+            cart.Controls.Add(c.Painel);
+            cart.Show();
         } 
         public void NovoJogo()
         {
@@ -29,6 +31,11 @@ namespace Bingo_OO.Classes
                 Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
                 foreach (Form f in forms) if (!(f.Name == "Bingo")) f.Close();
             }
+        }
+        public void chamarPainelSorteio()
+        {
+            Sorteio s = new Sorteio();
+            s.Show();
         }
     }
 }

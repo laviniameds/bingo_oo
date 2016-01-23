@@ -25,8 +25,6 @@ namespace Bingo_OO.Classes
             return arraySorteados;
         }
 
-        public int cont = 0;
-
         private string sorteado; 
 
         private string clicarSortear()
@@ -51,6 +49,8 @@ namespace Bingo_OO.Classes
             get { return arraySorteados; }
             set { arraySorteados = sortear(); }
         }
+
+        public int cont = 0;
 
         public string Sorteado
         {

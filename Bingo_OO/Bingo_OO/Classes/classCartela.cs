@@ -30,6 +30,10 @@ namespace Bingo_OO.Classes
             for (int i = 0; i < r.Length; i++) r[i] = arrayTemp[i];
 
             painel = new Panel();
+            painel.Width = 314;
+            painel.Height = 289;
+            painel.BackColor = Color.White;
+            painel.Location = new Point(14, 70);
             Button[,] botoes = new Button[5, 5];
             int cont = 0;
             for (int i = 0; i < 5; i++)
@@ -40,7 +44,7 @@ namespace Bingo_OO.Classes
                         botoes[i, j] = new Button();
                         botoes[i, j].Text = r[cont].ToString();
                         botoes[i, j].Size = new Size(62, 56);
-                        botoes[i, j].Location = new Point(70 * i, 70 * j);
+                        botoes[i, j].Location = new Point(62 * i, 55 * j);
                         botoes[i, j].Click += new EventHandler(this.botoes_Click);
                         painel.Controls.Add(botoes[i, j]);
                         cont++;
@@ -50,8 +54,6 @@ namespace Bingo_OO.Classes
         }
 
         private int contGanhou = 0;
-
-        private bool ganhou = false;
 
         //private static int[] armSorteio = new int[75];
 
@@ -67,10 +69,10 @@ namespace Bingo_OO.Classes
                 }
             if (contGanhou == 24)
             {
-                Ganhou = true;
                 Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
                 foreach (Form f in forms)
                 {
+                    MessageBox.Show("Parabéns " + f.Text + "! Você ganhou o jogo :D");
                     if (f.Name == "Bingo")
                     {
                         f.MainMenuStrip.Items[0].Enabled = true;
@@ -83,12 +85,6 @@ namespace Bingo_OO.Classes
             }
         }
 
-        public bool Ganhou
-        {
-            get { return ganhou; }
-            set { ganhou = value; }
-        }
-
         /*public int[] ArmSorteio
         {
             get {return armSorteio;}
@@ -96,9 +92,14 @@ namespace Bingo_OO.Classes
         }*/
 
         public Panel Painel
-        {
-            get {return painel;}
+        {            
             set {painel = encherPainel();}
+            get { return painel; }
+        }
+
+        public classCartela()
+        {
+            encherPainel();
         }
     }
 }

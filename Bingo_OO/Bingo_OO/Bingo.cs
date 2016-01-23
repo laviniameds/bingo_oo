@@ -26,26 +26,20 @@ namespace Bingo_OO
         {
             novaCartela.Enabled = true;
             terminarJogo.Enabled = true;
-            InicSorteio();
             novoJogoMenu.Enabled = false;
             b.cont = 0;
+            b.chamarPainelSorteio();
             b.chamarNovaCartela();
-        }
-
-        public void InicSorteio()
-        {
-            
         }
 
         private void novaCartela_Click(object sender, EventArgs e)
         {
-            classBingo b = new classBingo();
             b.chamarNovaCartela();
         }
 
         private void terminarJogo_Click(object sender, EventArgs e)
         {
-
+            b.TerminarJogo();
             terminarJogo.Enabled = false;
             novaCartela.Enabled = false;
             novoJogoMenu.Enabled = true;
