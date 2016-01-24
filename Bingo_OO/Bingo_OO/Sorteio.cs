@@ -25,8 +25,8 @@ namespace Bingo_OO
             lblSorteado.Text = s.Sorteado;
             listBox1.Items.Add(lblSorteado.Text);
             if (lblSorteado.Text == "--") btnSortear.Enabled = false;
-            s.cont++;
             b.qtdSaiu = s.cont;
+            s.cont++;
         }
     }
 }
