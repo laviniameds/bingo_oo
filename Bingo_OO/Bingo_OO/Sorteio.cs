@@ -21,9 +21,10 @@ namespace Bingo_OO
 
         private void btnSortear_Click(object sender, EventArgs e)
         {
-            lblSorteado.Text = s.clicarSortear();
+            lblSorteado.Text = s.Sorteado;
             listBox1.Items.Add(lblSorteado.Text);
             if (lblSorteado.Text == "--") btnSortear.Enabled = false;
+            s.cont++;
         }
     }
 }

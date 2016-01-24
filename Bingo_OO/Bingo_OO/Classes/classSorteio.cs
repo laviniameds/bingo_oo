@@ -24,15 +24,13 @@ namespace Bingo_OO.Classes
             return ArraySorteados;
         }
 
-        private string sorteado; 
+        private string sorteado="";
 
-        public string clicarSortear()
+        private string clicarSortear()
         {
-            cont++;
             if (cont < 75)
             {
                 sorteado = ArraySorteados.GetValue(cont).ToString();
-                //cart.ArmSorteio.SetValue(Convert.ToInt32(temp), cont);
                 return sorteado;
             }
             else
@@ -47,16 +45,17 @@ namespace Bingo_OO.Classes
             set { arraySorteados = value; }
         }
 
-        public int cont = -1;
+        public int cont;
 
         public string Sorteado
         {
-            get {return sorteado;}
-            set { sorteado = clicarSortear(); }
+            set {sorteado = value;}
+            get {return clicarSortear();}
         }
 
         public classSorteio()
         {
+            cont = 0;
             sortear();
             clicarSortear();
         }
