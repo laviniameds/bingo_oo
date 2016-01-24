@@ -15,6 +15,7 @@ namespace Bingo_OO.Classes
             Cartela cart = new Cartela();
             classCartela c = new classCartela();
             cart.Text = "Cartela " + ++cont;
+            c.Id = cont;
             cart.Controls.Add(c.Painel);
             cart.Show();
         } 
@@ -36,6 +37,18 @@ namespace Bingo_OO.Classes
         {
             Sorteio s = new Sorteio();
             s.Show();
+        }
+        private static int[] _numSorteados = new int[75];
+        public int[] numSorteados
+        {
+            get { return _numSorteados; }
+            set { _numSorteados = value; }
+        }
+        private static int _qtdSaiu =0;
+        public int qtdSaiu
+        {
+            get { return _qtdSaiu; }
+            set { _qtdSaiu = value; }
         }
     }
 }
