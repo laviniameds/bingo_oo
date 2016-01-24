@@ -57,8 +57,8 @@ namespace Bingo_OO.Classes
         {
             Button btn = (Button)sender;
             classBingo b = new classBingo();
-            for (int i = -1; i < b.qtdSaiu; i++)
-                if (btn.Text == b.numSorteados.GetValue(i+1).ToString())
+            for (int i = 0; i < b.qtdSaiu; i++)
+                if (btn.Text == b.numSorteados.GetValue(i).ToString())
                 {
                     btn.Enabled = false;
                     contGanhou++;

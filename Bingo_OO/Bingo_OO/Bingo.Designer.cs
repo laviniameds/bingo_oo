@@ -56,6 +56,7 @@
             // 
             // novaCartela
             // 
+            this.novaCartela.Enabled = false;
             this.novaCartela.Name = "novaCartela";
             this.novaCartela.Size = new System.Drawing.Size(87, 20);
             this.novaCartela.Text = "Nova Cartela";
@@ -63,6 +64,7 @@
             // 
             // terminarJogo
             // 
+            this.terminarJogo.Enabled = false;
             this.terminarJogo.Name = "terminarJogo";
             this.terminarJogo.Size = new System.Drawing.Size(95, 20);
             this.terminarJogo.Text = "Terminar Jogo";

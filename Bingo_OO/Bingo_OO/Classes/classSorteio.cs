@@ -24,35 +24,41 @@ namespace Bingo_OO.Classes
             b.numSorteados = ArraySorteados;
             return ArraySorteados;
         }
-        private string sorteado="";
-        private string clicarSortear()
+        private int contNumSaiu;
+        public void clicarSortear()
         {
-            if (cont < 75)
+            classBingo b = new classBingo();
+            Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
+            foreach (Form f in forms)
             {
-                sorteado = ArraySorteados.GetValue(cont).ToString();
-                return sorteado;
+                if (f.Name == "Sorteio")
+                {
+                    if (contNumSaiu < 75)
+                    {
+                        f.Controls["lblSorteado"].Text = ArraySorteados.GetValue(contNumSaiu).ToString();
+                        ListBox[] lb = f.Controls.OfType<ListBox>().ToArray();
+                        foreach (ListBox l in lb)
+                            if (l.Name == "listBox1") l.Items.Add(f.Controls["lblSorteado"].Text);
+                        contNumSaiu++;
+                        b.qtdSaiu++;
+                    }
+                    else
+                    {
+                        f.Controls["lblSorteado"].Text = "--";
+                        f.Controls["btnSortear"].Enabled = false;
+                    }
+                }
             }
-            else
-            {
-                return sorteado = "--";
-            }
+        }
+        public classSorteio()
+        {
+            contNumSaiu = 0;
+            sortear();
         }
         public int[] ArraySorteados
         {
             get { return arraySorteados; }
             set { arraySorteados = value; }
-        }
-        public int cont;
-        public string Sorteado
-        {
-            set {sorteado = value;}
-            get {return clicarSortear();}
-        }
-        public classSorteio()
-        {
-            cont = 0;
-            sortear();
-            clicarSortear();
         }
     }
 }

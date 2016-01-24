@@ -9,20 +9,32 @@ namespace Bingo_OO.Classes
 {
     public class classBingo
     {
-        public int cont = 0;
+        private static int[] _numSorteados = new int[75];
+        private static int _qtdSaiu = 0;
+        private int contNumCartela = 0;
         public void chamarNovaCartela()
         {
             Cartela cart = new Cartela();
             classCartela c = new classCartela();
-            cart.Text = "Cartela " + ++cont;
-            c.Id = cont;
+            cart.Text = "Cartela " + ++contNumCartela;
+            c.Id = contNumCartela;
             cart.Controls.Add(c.Painel);
             cart.Show();
         } 
         public void NovoJogo()
         {
-            Sorteio s = new Sorteio();
-            s.Show();
+            Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
+            foreach (Form f in forms)
+            {
+                f.MainMenuStrip.Items[0].Enabled = false;
+                f.MainMenuStrip.Items[1].Enabled = true;
+                f.MainMenuStrip.Items[2].Enabled = true;
+            }
+            for (int i = 0; i < 75; i++) numSorteados[i] = 0;
+            _qtdSaiu = 0;
+            this.contNumCartela = 0;
+            chamarPainelSorteio();
+            chamarNovaCartela();
         }
         public void TerminarJogo()
         {
@@ -30,7 +42,16 @@ namespace Bingo_OO.Classes
             if (result.Equals(DialogResult.OK))
             {
                 Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
-                foreach (Form f in forms) if (!(f.Name == "Bingo")) f.Close();
+                foreach (Form f in forms)
+                {
+                    if (!(f.Name == "Bingo")) f.Close();
+                    else
+                    {
+                        f.MainMenuStrip.Items[0].Enabled = true;
+                        f.MainMenuStrip.Items[1].Enabled = false;
+                        f.MainMenuStrip.Items[2].Enabled = false;
+                    }
+                }
             }
         }
         public void chamarPainelSorteio()
@@ -38,13 +59,11 @@ namespace Bingo_OO.Classes
             Sorteio s = new Sorteio();
             s.Show();
         }
-        private static int[] _numSorteados = new int[75];
         public int[] numSorteados
         {
             get { return _numSorteados; }
             set { _numSorteados = value; }
         }
-        private static int _qtdSaiu =0;
         public int qtdSaiu
         {
             get { return _qtdSaiu; }
